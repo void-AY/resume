@@ -24,7 +24,7 @@
             <a class="text-slate-600 hover:text-slate-100" href="https://vk.com/yaalexeu" target="_blank">VK</a> 
           </div>
           <div>
-            <a class="text-slate-600 hover:text-slate-100" href="https://vk.com/yaalexeu" target="_blank">GitHub</a>
+            <a class="text-slate-600 hover:text-slate-100" href="https://github.com/void-AY" target="_blank">GitHub</a>
           </div>
         </div>
       </div>
