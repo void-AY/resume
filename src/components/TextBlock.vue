@@ -2,10 +2,10 @@
     <div style="display: flex; flex-direction: column; gap: 40px;">
         <div class="flex flex-col gap-3" data-aos="fade-up">
             <h1 class="text-2xl font-medium">Обо мне </h1>
-            <h3 class="text-lg">Я - Junior фронтенд разработчик. Начал интеросоваться программированием в 9 классе, поэтому пошел учиться в колледж на программиста.</h3>  
+            <h3 class="text-lg">Я - junior frontend разработчик. Обучаюсь на 4 курсе в колледже.</h3>  
         </div>
         <div data-aos="fade-up">
-            <h1 class="text-2xl font-medium">Технологии которые изучаю</h1>
+            <h1>Технологии которые изучаю</h1>
             <ul class="imageTex">
                 <li>
                     <img src="../assets/img/JS.png" alt="" class="imageTex-icon">    
@@ -25,8 +25,8 @@
             </ul>
         </div>
         <div data-aos="fade-up"> 
-            <h1 class="text-2xl font-medium">Проекты в которых я уже получал опыт</h1>
-            <ul style="list-style: disc; display: flex; flex-direction: column; gap: 10px; margin-top: 20px;">
+            <h1>Проекты в которых я уже получал опыт</h1>
+            <ul class="ul_op" style="list-style: disc; display: flex; flex-direction: column; gap: 10px; margin-top: 20px;">
                 <li>
                     Разработка приложения на React Native для колледжа, включающего оценки и расписание.
                 </li>
@@ -42,17 +42,17 @@
             </ul>
         </div>
         <div>
-            <h1 class="text-2xl font-medium">Примеры</h1>
+            <h1>Примеры</h1>
             <PhotoSwiper />
         </div>
         <div class="flex flex-col gap-3">
-            <h1 class="text-2xl font-medium">Достижения</h1>
-            <h3 class="text-lg">Мой опыт работы над проектами включал срочные задачи, где важно было быстро адаптироваться и достигать результата. Несмотря на трудности и отсутствие опыта, все поставленные задачи были выполнены.</h3>
+            <h1>Достижения</h1>
+            <h3>Мой опыт работы над проектами включал срочные задачи, где важно было быстро адаптироваться и достигать результата. Несмотря на трудности и отсутствие опыта, все поставленные задачи были выполнены.</h3>
         </div>
     </div>
 </template>
 
-<script setup >
+<script setup>
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 AOS.init();
@@ -77,5 +77,27 @@ import PhotoSwiper from './PhotoSwiper.vue'
         user-select: none;
     }
 }
+.ul_op {
+    li {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+}
 
+@media (min-width: 768px) {
+    .ul_op {
+    li {
+        font-size: 20px;
+        margin-left: 0px;
+    }
+}
+}
+@media (min-width: 2560px) {
+    .ul_op {
+    li {
+        font-size: 24px;
+        margin-left: 0px;
+    }
+}
+}
 </style>

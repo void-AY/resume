@@ -36,3 +36,27 @@ a,
     padding: 0 2rem;
   } */
 }
+@media (min-width: 320px) {
+  #app h1{
+    font-size: 20px;
+  }
+  #app h3{
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  #app h1{
+    font-size: 24px;
+  }
+  #app h3{
+    font-size: 20px;
+  }
+}
+@media (min-width: 2560px) {
+  #app h1{
+    font-size: 28px;
+  }
+  #app h3{
+    font-size: 24px;
+  }
+}

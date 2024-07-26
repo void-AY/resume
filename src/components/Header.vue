@@ -16,12 +16,22 @@
 <style scoped lang="scss">
 .background {
     width: 100%;
-    height: 50px;
+    height: 40px;
     display: flex;
     position: sticky;
     align-items: center;
     background-color: var(--vt-c-green-light);
 }
+// @media (min-width: 320px) {
+//     .background {
+//     width: 100%;
+//     height: 30px;
+//     display: flex;
+//     position: sticky;
+//     align-items: center;
+//     background-color: var(--vt-c-green-light);
+// }
+// }
 .text {
     margin-left: 5%;
 }

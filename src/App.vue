@@ -18,7 +18,7 @@
       </div>
     </main>
     <footer>
-      <div style="margin: 0% 9%; padding: 2% 5%;">
+      <div class="footer">
         <div class="flex flex-col gap-2">
           <div>
             <a class="text-slate-600 hover:text-slate-100" href="https://vk.com/yaalexeu" target="_blank">VK</a> 
@@ -41,8 +41,8 @@ import TextBlock from '@/components/TextBlock.vue';
 .backgroundMain {
   /* width: 90vw; */
   /* height: 100vh; */
-  margin: 0px 9%;
-  padding: 40px;
+  margin: 0% 0%;
+  padding: 10px;
   border-radius: 6px;
   align-content: center;
   background-color: var(--vt-c-green-dark);
@@ -62,5 +62,22 @@ import TextBlock from '@/components/TextBlock.vue';
   /* возможна также и короткая запись данных свойств */
   /* background: url("path_to_my_image.jpg") center center no-repeat  fixed;
   background-size: cover; */
+}
+.footer {
+  padding: 2% 5%;
+}
+@media (min-width: 375px) {
+  .backgroundMain {
+    padding: 20px;
+  }
+}
+@media (min-width: 425px) {
+  .backgroundMain {
+    padding: 40px;
+    margin: 0% 9%;
+  }
+  .footer {
+  padding: 2% 13%;
+}
 }
 </style>
