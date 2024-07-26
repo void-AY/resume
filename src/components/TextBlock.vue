@@ -1,12 +1,12 @@
 <template>
     <div style="display: flex; flex-direction: column; gap: 40px;">
-        <div class="flex flex-col gap-3" data-aos="fade-up">
-            <h1 class="text-2xl font-medium">Обо мне </h1>
-            <h3 class="text-lg">Я - junior frontend разработчик. Обучаюсь на 4 курсе в колледже.</h3>  
+        <div class="flex flex-col gap-3">
+            <h1 data-aos="fade-down" class="text-2xl font-medium">Обо мне </h1>
+            <h3 data-aos="fade-up" class="text-lg">Я - junior frontend разработчик. Обучаюсь на 4 курсе в колледже.</h3>  
         </div>
-        <div data-aos="fade-up">
-            <h1>Технологии которые изучаю</h1>
-            <ul class="imageTex">
+        <div>
+            <h1 data-aos="fade-up">Технологии которые изучаю</h1>
+            <ul data-aos="fade-up" class="imageTex">
                 <li>
                     <img src="../assets/img/JS.png" alt="" class="imageTex-icon">    
                 </li>
@@ -24,30 +24,30 @@
                 </li>
             </ul>
         </div>
-        <div data-aos="fade-up"> 
-            <h1>Проекты в которых я уже получал опыт</h1>
+        <div> 
+            <h1 data-aos="fade-up">Проекты в которых я уже получал опыт</h1>
             <ul class="ul_op" style="list-style: disc; display: flex; flex-direction: column; gap: 10px; margin-top: 20px;">
-                <li>
+                <li data-aos="fade-right">
                     Разработка приложения на React Native для колледжа, включающего оценки и расписание.
                 </li>
-                <li>
+                <li data-aos="fade-right">
                     Интеграция и разработка поисковой системы для адресной базы ГАР (ФИАС) с использованием Manticore Search.
                 </li>
-                <li>
+                <li data-aos="fade-right">
                     Опыт развертывания серверов на Ubuntu с настройкой NGINX.
                 </li>
-                <li>
+                <li data-aos="fade-right">
                     Обновление и внедрение изменений на продакшн сервере для замены устаревшей поисковой системы.
                 </li>
             </ul>
         </div>
         <div>
-            <h1>Примеры</h1>
-            <PhotoSwiper />
+            <h1 data-aos="fade-up">Примеры</h1>
+            <PhotoSwiper />         
         </div>
         <div class="flex flex-col gap-3">
-            <h1>Достижения</h1>
-            <h3>Мой опыт работы над проектами включал срочные задачи, где важно было быстро адаптироваться и достигать результата. Несмотря на трудности и отсутствие опыта, все поставленные задачи были выполнены.</h3>
+            <h1 data-aos="fade-down">Достижения</h1>
+            <h3 data-aos="fade-up">Мой опыт работы над проектами включал срочные задачи, где важно было быстро адаптироваться и достигать результата. Несмотря на трудности и отсутствие опыта, все поставленные задачи были выполнены.</h3>
         </div>
     </div>
 </template>

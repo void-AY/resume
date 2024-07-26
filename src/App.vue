@@ -4,7 +4,7 @@
       <HelloWorld msg="You did it!" />
     </div>
   </header> -->
-  <div>
+  <div id="app" class="fade-in">
     <header>
       <div class="wrapper">
         <Header />
@@ -21,10 +21,10 @@
       <div class="footer">
         <div class="flex flex-col gap-2">
           <div>
-            <a class="text-slate-600 hover:text-slate-100" href="https://vk.com/yaalexeu" target="_blank">VK</a> 
+            <a class="text-slate-400 hover:text-slate-600" href="https://vk.com/yaalexeu" target="_blank">VK</a> 
           </div>
           <div>
-            <a class="text-slate-600 hover:text-slate-100" href="https://github.com/void-AY" target="_blank">GitHub</a>
+            <a class="text-slate-400 hover:text-slate-600" href="https://github.com/void-AY" target="_blank">GitHub</a>
           </div>
         </div>
       </div>
@@ -35,9 +35,23 @@
 <script setup>
 import Header from './components/Header.vue';
 import TextBlock from '@/components/TextBlock.vue';
+import 'animate.css';
 </script>
 
 <style lang="scss" scoped>
+.fade-in {
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .backgroundMain {
   /* width: 90vw; */
   /* height: 100vh; */
@@ -57,7 +71,7 @@ import TextBlock from '@/components/TextBlock.vue';
   background-repeat: no-repeat;
   background-attachment: fixed; /* cвойство определяет, будет ли фоновое изображение прокручиваться вместе с остальной частью страницы или будет фиксированным */
   /* width: 100vw; */
-  height: 100vh; 
+  height: 50vh; 
   margin: 0;
   /* возможна также и короткая запись данных свойств */
   /* background: url("path_to_my_image.jpg") center center no-repeat  fixed;
